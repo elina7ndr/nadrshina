@@ -3,13 +3,13 @@
   <div class="login">
     <h2>Войти</h2>
     <form>
-      <label for="username">Логин:</label>
-      <input type="text" id="username" v-model="username">
+      <label for="username">Логин:</label> <!-- Отображаем метку для ввода логина -->
+      <input type="text" id="username" v-model="username"> <!-- Создаем текстовое поле для ввода логина и связываем его с данными username -->
 
-      <label for="password">Пароль:</label>
-      <input type="password" id="password" v-model="password">
+      <label for="password">Пароль:</label> <!-- Отображаем метку для ввода пароля -->
+      <input type="password" id="password" v-model="password"> <!-- Создаем поле для ввода пароля и связываем его с данными password -->
 
-      <router-link to="/" class="action"><button @click="home">Войти</button></router-link>
+      <router-link to="/" class="action"><button @click="home">Войти</button></router-link> <!-- Создаем кнопку "Войти", которая будет перенаправлять на главную страницу при клике -->
     </form>
   </div>
 </div>
@@ -19,17 +19,18 @@
 export default {
   data() {
     return {
-      username: '',
-      password: '',
+      username: '', // Инициализируем переменную для хранения логина
+      password: '', // Инициализируем переменную для хранения пароля
     };
   },
   methods: {
     login() {
-      // Ваша логика для обработки данных формы входа
+      // Определяем метод для обработки входа пользователя
     },
   },
 };
 </script>
+
 
 <style>
  .main{

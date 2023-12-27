@@ -1,27 +1,28 @@
 <template>
-    <footer>
-      <div class="footer-content">
-        <div class="social-icons">
-          <ul class="socialmedia">
-            <li><img src="@/assets/facebook.png"> facebook/makeup.com</li>
-            <li><img src="@/assets/twitter.png"> twitter/makeup.com</li>
-            <li><img src="@/assets/instagram.png"> instagram/makeup.com</li>
-          </ul>
-        </div>
-        <div class="contact-info">
-          <p>Адрес: г. Санкт-Петербург ул. Достоевского д. 14</p>
-          <p>Телефон: +7 999 447 64 00</p>
-        </div>
-        
+  <footer> <!-- Открываем тег footer для нижней части страницы -->
+    <div class="footer-content"> <!-- Создаем блок с классом "footer-content" для содержимого подвала -->
+      <div class="social-icons"> <!-- Создаем блок с классом "social-icons" для отображения иконок социальных сетей -->
+        <ul class="socialmedia"> <!-- Создаем список с классом "socialmedia" для отображения иконок социальных сетей -->
+          <li><img src="@/assets/facebook.png"> facebook/makeup.com</li> <!-- Вставляем изображение и текст для ссылки на Facebook -->
+          <li><img src="@/assets/twitter.png"> twitter/makeup.com</li> <!-- Вставляем изображение и текст для ссылки на Twitter -->
+          <li><img src="@/assets/instagram.png"> instagram/makeup.com</li> <!-- Вставляем изображение и текст для ссылки на Instagram -->
+        </ul>
       </div>
-    </footer>
-  </template>
-  
-  <script>
-  export default {
-    name: 'Footer'
-  };
-  </script>
+      <div class="contact-info"> <!-- Создаем блок с классом "contact-info" для отображения контактной информации -->
+        <p>Адрес: г. Санкт-Петербург ул. Достоевского д. 14</p> <!-- Отображаем адрес компании -->
+        <p>Телефон: +7 999 447 64 00</p> <!-- Отображаем контактный телефон компании -->
+      </div>
+      
+    </div>
+  </footer>
+</template>
+
+<script>
+export default {
+  name: 'Footer' // Устанавливаем имя компонента "Footer"
+};
+</script>
+
   
   <style scoped>
   footer {

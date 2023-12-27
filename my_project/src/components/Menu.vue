@@ -1,26 +1,26 @@
 <template>
-  <header>
-  <div class="menu">
-    <div class="logo">
-      <span>Make Up</span>
+  <header> <!-- Открываем тег header для верхней части страницы -->
+    <div class="menu"> <!-- Создаем блок с классом "menu" -->
+      <div class="logo"> <!-- Создаем блок с классом "logo" для отображения логотипа -->
+        <span>Make Up</span> <!-- Отображаем текст "Make Up" внутри блока "logo" -->
+      </div>
+      <div class="tabs"> <!-- Создаем блок с классом "tabs" для отображения вкладок меню -->
+        <div v-for="tab in tabs" :key="tab" class="tab">{{ tab }}</div> <!-- Используем директиву v-for для отображения вкладок меню, каждая вкладка имеет класс "tab" и содержит текст из массива "tabs" -->
+      </div>
+      <div class="actions"> <!-- Создаем блок с классом "actions" для отображения действий пользователя -->
+        <router-link to="/login" class="action">Войти</router-link> <!-- Создаем ссылку для перехода на страницу входа с текстом "Войти" -->
+        <router-link to="/register" class="action">Зарегистрироваться</router-link> <!-- Создаем ссылку для перехода на страницу регистрации с текстом "Зарегистрироваться" -->
+      </div>
     </div>
-    <div class="tabs">
-      <div v-for="tab in tabs" :key="tab" class="tab">{{ tab }}</div>
-    </div>
-    <div class="actions">
-      <router-link to="/login" class="action">Войти</router-link>
-      <router-link to="/register" class="action">Зарегистрироваться</router-link>
-    </div>
-  </div>
-</header>
+  </header>
 </template>
 
 <script>
 export default {
-  name: "Menu",
-  data() {
+  name: "Menu", // Устанавливаем имя компонента "Menu"
+  data() { // Определяем функцию data для возвращения начальных данных компонента
     return {
-      tabs: ["Каталог", "Новости", "Курсы", "О нас"],
+      tabs: ["Каталог", "Новости", "Курсы", "О нас"], // Устанавливаем массив вкладок для меню
     };
   },
 };

@@ -1,8 +1,8 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import router from './router'; // Убедитесь, что правильный путь к вашему файлу маршрутизатора
+import { createApp } from 'vue'; // Импортируем функцию createApp из библиотеки Vue для создания экземпляра приложения
+import App from './App.vue'; // Импортируем корневой компонент приложения из файла App.vue
+import router from './router'; // Импортируем маршрутизатор из файла router.js. 
 
-const app = createApp(App);
-app.use(router); // Используйте ваш маршрутизатор здесь
+const app = createApp(App); // Создаем экземпляр приложения, используя корневой компонент App
+app.use(router); // Подключаем маршрутизатор к экземпляру приложения, чтобы он мог использовать маршруты
 
-app.mount('#app');
+app.mount('#app'); // Монтируем (присоединяем) экземпляр приложения к DOM-элементу с идентификатором "app" на странице
