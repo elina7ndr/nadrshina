@@ -26,7 +26,7 @@
   <style scoped>
   footer {
     width: 100%;
-    height: 10vh;
+    height: 90px;
     background-color: #CB0077;
     padding: 10px;
     box-sizing: border-box;
