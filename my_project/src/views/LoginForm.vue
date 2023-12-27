@@ -36,6 +36,9 @@ export default {
     display: flex;
     justify-content: center;
     color: white;
+    margin-top: 100px;
+    margin-bottom: 120px;
+
   }
   .login{
     width: 300px;

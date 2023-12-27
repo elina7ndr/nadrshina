@@ -1,4 +1,5 @@
 <template>
+  <header>
   <div class="menu">
     <div class="logo">
       <span>Make Up</span>
@@ -11,6 +12,7 @@
       <router-link to="/register" class="action">Зарегистрироваться</router-link>
     </div>
   </div>
+</header>
 </template>
 
 <script>
@@ -26,16 +28,18 @@ export default {
 
 <style scoped>
 .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 60px;
   width: 100%;
   background-color: #CB0077;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  position: fixed;
+  top: 0;
   color: white;
-  padding: 0 20px;
-  margin: 0;
-  text-decoration: none;
 }
 
 .logo span {

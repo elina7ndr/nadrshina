@@ -25,17 +25,19 @@
   
   <style scoped>
   footer {
-    width: 100%;
-    height: 90px;
-    background-color: #CB0077;
-    padding: 10px;
-    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  background-color: #CB0077;
+  color: white;
+  padding: 10px 20px;
+  margin: 0;
+  text-decoration: none;
+  position: -webkit-sticky;
+  position: sticky;
+
   }
   
   .footer-content {

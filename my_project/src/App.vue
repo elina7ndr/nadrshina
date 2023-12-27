@@ -1,9 +1,10 @@
 <template>
      <div id="app">
     <Menu />
+    <router-view></router-view>
     <Footer />
   </div>
-  <router-view></router-view>
+  
 </template>
 
 <script>
